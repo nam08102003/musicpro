@@ -1,0 +1,87 @@
+.wrapper-page {
+    width: 100%;
+    display: flex;
+    background-color: $bg-color;
+    overflow: hidden;
+
+    .page-main-content {
+        // width: 100%;
+        padding-left: 220px;
+        .site-content {
+            margin-top: 70px;
+        }
+    }
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.grid-1 {
+    grid-column: span 1;
+}
+.grid-2 {
+    grid-column: span 2;
+}
+.grid-3 {
+    grid-column: span 3;
+}
+.grid-4 {
+    grid-column: span 4;
+}
+.grid-5 {
+    grid-column: span 5;
+}
+.grid-6 {
+    grid-column: span 6;
+}
+.grid-7 {
+    grid-column: span 7;
+}
+
+.grid-8 {
+    grid-column: span 8;
+}
+.grid-9 {
+    grid-column: span 9;
+}
+.grid-10 {
+    grid-column: span 9;
+}
+
+.title-section {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    background-color: $bg-color;
+}
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: $color-primary;
+    &:hover {
+        background-color: $color-hover;
+    }
+}
+
+.dpl-none {
+    display: none;
+}
+
+.dpl-block {
+    display: block;
+}
+
+.isactive {
+    svg {
+        fill: red !important;
+    }
+}

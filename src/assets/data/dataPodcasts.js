@@ -1,0 +1,42 @@
+export const podcastsMusic = [
+    {
+        id: 1,
+        name: 'Evelation',
+        singer: 'Stevent Furick',
+        views: '20',
+        image: 'sg1.jpg',
+        music: 'ViMeAnhBatChiaTay-MiuLe-7503053.mp3',
+    },
+    {
+        id: 2,
+        name: 'The Gary Vee',
+        singer: 'Gary Vee',
+        views: '20',
+        image: 'sg2.jpg',
+        music: 'CoLeQuaKhoDeQuen1Nguoi-1nGNamLeeDBlue-6060223.mp3',
+    },
+    {
+        id: 3,
+        name: 'The Daily Show',
+        singer: 'Trevor Noah',
+        views: '20',
+        image: 'sg3.jpg',
+        music: 'ChayNgayDi-SonTungMTP-5468704.mp3',
+    },
+    {
+        id: 4,
+        name: 'Daily Podcasts',
+        singer: 'Joel Osteen',
+        views: '20',
+        image: 'sg4.jpg',
+        music: 'Tien Nhieu De Lam Gi - Gducky.mp3',
+    },
+    {
+        id: 5,
+        name: 'The Mindset Me To For You',
+        singer: 'Job Dial',
+        views: '20',
+        image: 'sg5.jpg',
+        music: 'Gia Cung Nhau La Duoc - Tung TeA_ PC_ Vo.mp3',
+    },
+];

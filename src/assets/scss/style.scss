@@ -1,0 +1,33 @@
+// Import abstract
+@import './abstracts/functions';
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+// Import base
+@import './base/normalize';
+@import './base/typography';
+
+// Import components
+@import './components/elements/buttonMode';
+@import './components/elements/buttonFollow';
+@import './components/elements/_search';
+@import './components/elements/dot';
+@import './components/sections/poscater';
+@import './components/sections/trendingpodcast';
+@import './components/sections/recently';
+@import './components/sections/mostPopular';
+@import './components/sections/favoritemusic';
+
+// Import layout
+@import './layout/layoutDefault';
+@import './layout/_navbar';
+@import './layout/_header';
+@import './layout/sidebar';
+@import './layout/controllMusic';
+
+// Import pages
+
+// Import theme
+
+// Import vendors
+@import './vendors/slick';

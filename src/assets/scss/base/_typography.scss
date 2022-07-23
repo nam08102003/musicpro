@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: $white;
+    overflow-x: hidden;
+}
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+}
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+a {
+    padding: 2px 0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+li {
+    list-style-type: none;
+}
+
+svg {
+    width: 18px;
+    height: 18px;
+    fill: $text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    display: block;
+    font-size: 1.2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+p {
+    font-size: 15px;
+}
+
+img {
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media screen and (min-width: 480px) {
+    p {
+        font-size: var($p-font-size-small);
+    }
+    h1 {
+        font-size: var($h1-font-size-small);
+    }
+}
+@media screen and (min-width: 640px) {
+    p {
+        font-size: var($p-font-size-medium);
+    }
+    h1 {
+        font-size: var($h1-font-size-medium);
+    }
+}
+@media screen and (min-width: 1024px) {
+    p {
+        font-size: var($p-font-size-large);
+    }
+    h1 {
+        font-size: var($h1-font-size-large);
+    }
+}
+
+.text-xs {
+    font-size: 0.75rem; /* 12px */
+    line-height: 1rem; /* 16px */
+}
+.text-sm {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+}
+.text-base {
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem; /* 24px */
+}
+.text-lg {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */
+}
+.text-xl {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+}
+.text-2xl {
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+}
+.text-3xl {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+}
+
+.font-normal {
+    font-weight: 400;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+.font-semibold {
+    font-weight: 600;
+}
+.font-bold {
+    font-weight: 700;
+}
+
+.title {
+    font-size: 14px;
+    color: $text-color;
+}
+
+.title-nav {
+    color: $white;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5px 0;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+.text-upper {
+    text-transform: uppercase;
+}
+
+.mx-10 {
+    margin: 0 10px;
+}
+.m-15 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.mx-15 {
+    margin: 0 15px;
+}
+
+.mx-40 {
+    margin: 0 40px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.px-40 {
+    padding: 0 40px;
+}
+
+.fl-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hover-button:hover {
+    color: $color-primary;
+    svg {
+        fill: $color-primary;
+    }
+}

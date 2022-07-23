@@ -1,0 +1,103 @@
+.controll-play-music {
+    overflow: hidden;
+    position: fixed;
+    height: 90px;
+    left: 220px;
+    right: 0;
+    bottom: 0;
+    background-color: $color-primary;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(100%);
+    .wrapper {
+        align-items: center;
+    }
+    .music-playing {
+        .info-music-playing {
+            display: flex;
+            align-items: center;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+            .info-main {
+                margin-left: 20px;
+                line-height: 18px;
+                h4 {
+                    font-size: 18px;
+                    margin: 0;
+                }
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .controll-option {
+        .time-bar {
+            width: 100%;
+            padding-top: 10px;
+            input {
+                height: 2px;
+                width: 200px;
+                color: $color-primary;
+            }
+            span {
+                font-size: 12px;
+                padding: 0 8px;
+            }
+        }
+        svg {
+            width: 22px;
+            height: 22px;
+            fill: $white;
+            transition: all 0.25s ease-in-out;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+        .play-pause {
+            width: 40px;
+            height: 40px;
+            background-color: $white;
+            border-radius: 50%;
+            .play-btn {
+                svg {
+                    transform: translate(2px, 3px);
+                }
+            }
+            .pause-btn {
+                svg {
+                    transform: translate(1px, 3px);
+                }
+            }
+            svg {
+                fill: $color-primary;
+                width: 30px;
+                height: 30px;
+            }
+        }
+        div {
+            margin: 0 8px;
+        }
+        .random-btn {
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+input[type='range']::-web-slider-thumb {
+    -webkit-appearance: none;
+    width: 2px;
+    height: 1px;
+}
+
+.controll-play-music {
+    &.active {
+        transform: translateY(0);
+    }
+}

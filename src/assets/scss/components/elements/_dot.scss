@@ -1,0 +1,10 @@
+.dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $text-color;
+    cursor: pointer;
+}

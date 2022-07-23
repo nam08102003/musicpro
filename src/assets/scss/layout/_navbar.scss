@@ -1,0 +1,44 @@
+.navbar {
+    position: fixed;
+    left: 0;
+    width: 220px;
+    background-color: $color-secondary;
+    height: 100%;
+    .container {
+        margin-left: 25px;
+        margin-top: 20px;
+        .navbar-logo {
+            a {
+                color: $white;
+            }
+            svg {
+                fill: $color-primary;
+                margin-right: 8px;
+            }
+        }
+        .navbar-content {
+            margin-top: 20px;
+            h4 {
+                margin-bottom: 15px;
+                font-weight: 400;
+            }
+            ul {
+                li {
+                    font-size: 14px;
+                    width: 100%;
+                    padding: 4px 0;
+                    svg {
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+        .navbar-button {
+            width: 80px;
+            height: 35px;
+            border-radius: 20px;
+            background-color: $color-primary;
+            cursor: pointer !important;
+        }
+    }
+}

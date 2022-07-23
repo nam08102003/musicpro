@@ -1,0 +1,43 @@
+.button-fl {
+    width: 60px;
+    padding: 0 8px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 700;
+    color: $black;
+    border: 1px solid transparent;
+    cursor: pointer;
+    &:hover {
+        border-color: $color-primary;
+        opacity: 0.8;
+    }
+}
+
+.button-disfl {
+    background-color: $color-disabled;
+    color: $color-primary;
+}
+
+.button-fl.bg-blue {
+    background-color: $color-primary;
+}
+
+.button-fl.text-white {
+    color: $white;
+}
+
+.button-fl.bg-none {
+    border: 1px solid $text-color;
+}
+.button-fl.width-md {
+    font-size: 14px;
+    width: 100px;
+}
+.button-fl.width-lg {
+    font-size: 14px;
+    width: 150px;
+}
