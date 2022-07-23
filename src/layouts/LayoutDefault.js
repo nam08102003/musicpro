@@ -92,7 +92,7 @@ const LayoutDefault = ({ children }) => {
                         <div className={`controll-play-music ${active ? 'active' : ''}`}>
                             <MusicControll />
                         </div>
-                        <Footer />
+                        <Footer MenuNav={navMenuLinks} LibraryNav={navLibraryLinks} />
                     </div>
                     <Audio status={isPlaying} />
                 </MusicContext.Provider>

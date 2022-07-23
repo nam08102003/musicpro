@@ -1,22 +1,24 @@
 import React from 'react';
-import TrendingPodcast from '../components/sections/TrendingPodcast';
+import SlideMusic from '../components/sections/SlideMusic';
 import RecentlyPlayed from '../components/sections/RecentlyPlayed';
 import MostPopular from '../components/sections/MostPopular';
-import SideBar from '../components/layout/SideBar';
 import FavoriteMusic from '../components/sections/FavoriteMusic';
+import FavoriteSinger from '../components/sections/FavoriteSinger';
+import NewMusic from '../components/sections/NewMusic';
+import Event from '../components/sections/Event';
 
 const Home = () => {
     return (
-        <div className="home-main-page">
-            <div className="container grid">
-                <div className="home-content-main grid-7 mx-15 px-40">
-                    <TrendingPodcast />
+        <div className="home-main-page w-full">
+            <div className="container">
+                <div className="home-content-main w-full px-40">
+                    <SlideMusic />
                     <RecentlyPlayed />
                     <MostPopular />
+                    <FavoriteSinger />
+                    <NewMusic />
                     <FavoriteMusic />
-                </div>
-                <div className="home-sidebar grid-3">
-                    <SideBar />
+                    <Event />
                 </div>
             </div>
         </div>

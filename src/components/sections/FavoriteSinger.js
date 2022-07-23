@@ -1,11 +1,11 @@
 import { podcastsMusic } from '../../assets/data/dataPodcasts';
 import { BsFillPlayFill } from 'react-icons/bs';
 
-const FavoriteMusic = () => {
+const FavoriteSinger = () => {
     return (
-        <div className="favorite-music">
-            <h1 className="title-section mt-20">Favorite Music</h1>
-            <div className="lists-favorite-music">
+        <div className="favorite-singer">
+            <h1 className="title-section mt-20">Favorite Artist</h1>
+            <div className="lists-favorite-singer">
                 <div className="slider grid">
                     {podcastsMusic.map((music) => {
                         return (
@@ -29,4 +29,4 @@ const FavoriteMusic = () => {
     );
 };
 
-export default FavoriteMusic;
+export default FavoriteSinger;

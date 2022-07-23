@@ -1,0 +1,73 @@
+.new-music {
+    .slider {
+        width: 100%;
+        display: flex;
+        .slick-slide {
+            margin: 0 15px;
+        }
+        .slick-list {
+            margin: 0 -15px;
+        }
+    }
+}
+.new-music-title {
+    align-items: center;
+    .button-see-all {
+        button {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            color: $text-color;
+            cursor: pointer;
+            transition: all 0.25s ease-in-out;
+            svg {
+                margin-left: 5px;
+            }
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+.new-music-item {
+    height: 140px;
+    background-color: $color-secondary;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    .wrapper {
+        height: 100%;
+        padding: 15px;
+        .new-music-content {
+            margin-left: 20px;
+            .new-music-info {
+                width: 100%;
+                h4 {
+                    font-size: 17px;
+                    margin: 0;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                span {
+                    padding-top: 8px;
+                    font-size: 13px;
+                    color: $text-color;
+                }
+            }
+            .new-music-created {
+                padding-top: 47px;
+                text-align: right;
+                span {
+                    font-size: 15px;
+                    color: $text-color;
+                }
+            }
+        }
+    }
+    img {
+        width: 100%;
+        height: 110px;
+        border-radius: 5px;
+    }
+}

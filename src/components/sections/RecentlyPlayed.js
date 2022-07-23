@@ -23,7 +23,7 @@ const RecentlyPlayed = ({ total }) => {
             <div className="list-recently grid">
                 {podcastsMusic.map((music) => {
                     return (
-                        <div className="recently-item grid-2 mx-10" key={music.id}>
+                        <div className="recently-item grid-2 mx-15" key={music.id}>
                             <div className="wrapper text-left">
                                 <div className="recently-img" onClick={() => clickMusic(music.id)}>
                                     <img src={require(`../../assets/images/singer/${music.image}`)} alt="podcast" />

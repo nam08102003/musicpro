@@ -1,12 +1,10 @@
 import { BsFillPlayFill } from 'react-icons/bs';
 import { FaHeadphonesAlt } from 'react-icons/fa';
-import pc1 from '../../assets/images/podcasts/pc1.webp';
 import ButtonFollow from '../elements/ButtonFollow';
-import Dot from '../elements/Dot';
 import Slider from 'react-slick';
 import { podcastsMusic } from '../../assets/data/dataPodcasts';
 
-const TrendingPodcast = () => {
+const SlideMusic = () => {
     const settings = {
         arrows: false,
         className: 'slider',
@@ -19,12 +17,11 @@ const TrendingPodcast = () => {
         slidesToScroll: 1,
     };
     return (
-        <div className="trend-podcast">
-            <h1 className="title-section mt-20">Trending Podcasts</h1>
+        <div className="trend-podcast mt-40">
             <Slider {...settings}>
                 {podcastsMusic.map((podcast) => {
                     return (
-                        <div className="item-podcast">
+                        <div className="item-podcast" key={podcast.id}>
                             <img src={require(`../../assets/images/singer/${podcast.image}`)} alt="podcast" />
                             <div className="content-podcast">
                                 <h2 className="name-podcast">
@@ -59,4 +56,4 @@ const TrendingPodcast = () => {
     );
 };
 
-export default TrendingPodcast;
+export default SlideMusic;

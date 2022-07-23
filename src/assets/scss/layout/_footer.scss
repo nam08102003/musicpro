@@ -1,0 +1,54 @@
+.footer-top {
+    position: relative;
+    padding: 0 50px 20px 50px;
+    h4 {
+        font-size: 18px;
+        color: $white;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    li {
+        margin: 4px 0;
+        a {
+            padding: 4px 2px;
+        }
+    }
+    .link-contact {
+        display: inline-flex;
+        span {
+            padding: 0 5px;
+            svg {
+                width: 24px;
+                height: 24px;
+                fill: $white;
+                transition: all 0.25s ease-in-out;
+                cursor: pointer;
+                &:hover {
+                    fill: $color-primary;
+                }
+            }
+        }
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: $text-color;
+    }
+}
+
+.footer-bottom {
+    padding: 20px 50px 90px 50px;
+    .footer-bottom-content {
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        p {
+            font-size: 16px;
+        }
+    }
+}
